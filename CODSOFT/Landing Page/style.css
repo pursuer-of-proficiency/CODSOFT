@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* navigation bar */
+
+nav {
+    display: flex;
+    position: relative;
+    background-color: rgba(47, 46, 47, 0.5);
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    position:relative;
+    left: 120px;
+}
+nav a{
+    align-self: center;
+    position: fixed;
+    color: white;
+    padding: 10px;
+    border-radius: 10%;
+}
+.head{
+    position: absolute;
+    top: 20px;
+    left: 170px;
+    color: white;
+}
+.home{
+    position:relative;
+    left:1000px;
+}
+.about{
+    position:relative;
+    left:1020px;
+}
+.contact{
+    position:relative;
+    left:1040px;
+}
+.sign{
+    position:relative;
+    left:1060px;
+}
+nav a:hover {
+    background-color: rgb(0,0,0, 0.3);
+    color: orange;
+    cursor: pointer;
+}
+
+body {
+    background: url("assets/pic.jpg") center/cover no-repeat fixed ;
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1630px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+
+/*HEADING AND CONTENT*/
+
+.heading{
+    position: absolute;
+    left:510px;
+    top: 100px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+.head1{
+    position: absolute;
+    left:860px;
+    top: 100px;
+    font-size: 50px;
+    color: rgb(233, 159, 12);
+    
+}
+.head2{
+    position: absolute;
+    color: white;
+    top:260px;
+    left:450px;
+}
+.search-container {
+    position: absolute;
+    top:280px;
+    left:510px;
+    text-align: center;
+    margin: 50px;
+}
+
+.search-box {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.search-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.line{
+    position: absolute;
+    top:1100px;
+    background-color: orange;
+    width: 1300px;
+    height: 5px;
+    border-color: black;
+    left:110px;
+    opacity: 50%;
+}
+.line2{
+    position: absolute;
+    top:1500px;
+    background-color: orange;
+    width: 1300px;
+    height: 5px;
+    border-color: black;
+    left:110px;
+    opacity: 50%;
+}
+
+/*Card */
+
+section {
+    width: 1000px;
+    position: relative;
+    left:230px;
+    top:1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .card {
+    width: 230px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+
+    img {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.9;
+    }
+  
+    h2 {
+      height: 60px;;
+      width:290px;
+      font-size: 15px;
+      position: absolute;
+      top:260px;
+      padding:10px;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: normal;
+      text-transform: uppercase;
+      background-color: rgb(60, 59, 59,0.7);
+    }
+    
+    p, a {
+      position: absolute;
+      opacity: 0;
+      max-width: 80%;
+    }
+    
+    p {
+      inset: auto auto 80px 30px;
+    }
+    
+    a {
+      inset: auto auto 40px 30px;
+      color: inherit;
+      text-decoration: none;
+    }
+    
+  }
+
+  .card:hover{
+        transform: scale(1.05);
+  }
+
+/*  Cards  */
+
+article{
+    position:absolute;
+    top:450px;
+    left:150px;
+    color: white;
+
+    h2{
+        position: absolute;
+        top:500px;
+        font-size: 40px;
+    }    
+    p{
+        opacity: 70%;
+        color: rgb(0, 0, 0);
+        margin: 10px 0;
+        
+    }
+    .search-container {
+        position: absolute;
+        top: 500px;
+        left: 510px;
+        width: 650px;
+        margin: 10px;
+    }
+    
+    .search-box {
+        padding: 10px;
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    .search-button {
+        padding: 10px 20px;
+        background-color:rgb(255, 165, 0, 0.7);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    header {
+        position:absolute;
+        width:100%;
+        color: white;
+        background-color: rgba(36, 36, 36, 0.7);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .explore-section {
+        max-width: 1200px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 35px;
+    }
+
+    .destination-card {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .destination-card:hover {
+        transform: scale(1.05);
+    }
+
+    .destination-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .destination-caption {
+        padding: 15px;
+        background-color: #fff;
+    }
+
+    h3 {
+        color: rgb(0, 0, 0);
+        margin: 0;
+        font-size: 1.5rem;
+
+    }
+    span{
+        color: white;
+        opacity:70%;
+        position: relative;
+        top:100px;
+        left:10px;
+    }
+   
+}
+
+/* footer Section */
+
+footer {
+    position: relative;
+    top: 1200px;
+    background-color: rgb(47,46,47, 0.5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
